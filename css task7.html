@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Basic styling for the page */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Styling for the outer container */
+  .outer-container {
+    background-color: #c60968; /* Pink color for the outer container */
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  /* Styling for the center box */
+  .center-box {
+    background-color: #ca2a7a; /* Dark pink color for the center box */
+    border: 1px solid #ccc;
+    padding: 40px; /* Increase padding for gaps on all sides */
+    max-width: 800px; /* Increase max width for a wider box */
+    text-align: left; /* Left align text */
+  }
+
+  /* Styling for form elements */
+  form {
+    text-align: left;
+  }
+
+  .form-group {
+    margin-bottom: 20px; /* Increase gap between form groups */
+    display: flex; /* Display form groups as flex containers */
+    align-items: center; /* Center align form elements */
+  }
+
+  .form-label {
+    width: 150px; /* Fixed width for labels */
+    margin-right: 20px; /* Add space between labels and inputs */
+    font-size: 16px; /* Decrease text size */
+  }
+
+  .form-input {
+    flex-grow: 1; /* Expand input fields to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Decrease input text size */
+  }
+
+  .form-select {
+    flex-grow: 1; /* Expand select fields to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Decrease select text size */
+  }
+
+  .form-textarea {
+    flex-grow: 1; /* Expand text area to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px; /* Decrease textarea text size */
+  }
+
+  .form-button {
+    background-color: white; /* Pink color for the button */
+    color: rgb(11, 10, 10);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Decrease button text size */
+  }
+</style>
+</head>
+<body>
+
+<div class="outer-container">
+  <div class="center-box">
+    <form>
+      <div class="form-group">
+        <label class="form-label" for="fullname">Full Name:</label>
+        <input class="form-input" type="text" id="fullname" name="fullname" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email:</label>
+        <input class="form-input" type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="password">Password:</label>
+        <input class="form-input" type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="phone">Phone Number:</label>
+        <input class="form-input" type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="language">Language:</label>
+        <select class="form-select" id="language" name="language">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="zip">Zip Code:</label>
+        <input class="form-input" type="text" id="zip" name="zip">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="about">About:</label>
+        <textarea class="form-textarea" id="about" name="about" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="form-button" type="submit">Register</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

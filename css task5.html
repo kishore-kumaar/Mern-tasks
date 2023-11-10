@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Basic styling for the page */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Styling for the center box */
+  .center-box {
+    background-color: yellow; /* Add background color */
+    border: 1px solid #ccc;
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 600px; /* Adjust the max width as needed */
+    display: flex;
+  }
+
+  /* Styling for the side navigation buttons */
+  .sidenav {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    width: 100px; /* Adjust the width as needed */
+  }
+
+  .sidenav a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black; /* Change text color to black */
+    background-color: #f5f1f1; /* Background color for the buttons */
+    margin-bottom: 10px; /* Add white spacing below buttons */
+  }
+
+  .sidenav a:last-child {
+    margin-bottom: 200px; /* Increase white spacing below the last button */
+  }
+
+  .sidenav a:hover {
+    background-color: #555; /* Change color on hover */
+  }
+
+  /* Styling for the content section */
+  .content {
+    flex-grow: 1; /* Fill available space with content */
+    padding: 20px 0; /* Increase vertical padding for white space */
+  }
+</style>
+</head>
+<body>
+
+<div class="center-box">
+  <div class="sidenav">
+    <a class="button1" href="#">Home page</a>
+    <a class="button2" href="#">Musing</a>
+    <a class="button3" href="#">Links</a>
+    <a class="button4" href="#">My town</a>
+  </div>
+  <div class="content">
+    <h2>My first styled page</h2>
+    <p>Welcome to my styled page.</p>
+    <p>It lacks some background images, but has some basic styling. Also, it contains some navigation buttons, which are links even though they don't go anywhere.</p>
+    <p>Here's some more text with extra white space below the buttons and content.</p>
+    <hr> <!-- Add a line separator -->
+    <p>Created on 09-11-2003 by Kishore Kumaar RK</p>
+  </div>
+</div>
+
+</body>
+</html>

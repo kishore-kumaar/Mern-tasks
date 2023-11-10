@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .content-box {
+            border: 1px solid #333;
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .content-box a {
+            text-decoration: underline; /* Add underlines to links */
+            margin: 0 10px;
+            color: blue; /* Set the link color to blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <p>Click on any of the links</p>
+        <a href="#">Opens in new</a>
+        <span>|</span>
+        <a href="#">Opens in self</a>
+        <span>|</span>
+        <a href="#">Opens in parent</a>
+        <span>|</span>
+        <a href="#">Opens in body</a>
+        <span>|</span>
+        <a href="mailto:example@example.com">Send Email</a>
+    </div>
+</body>
+</html>
